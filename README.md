@@ -58,45 +58,43 @@ python main.py
 
 ## Example Output
 
-============================================================
+    ============================================================
+         FILE METADATA EXTRACTOR — DFIR TOOL
+    ============================================================
 
-FILE METADATA EXTRACTOR — DFIR TOOL
-[ FILE INFO ]
-filename            : photo.jpg
+    [ FILE INFO ]
+    ----------------------------------------
+      filename            : photo.jpg
+      size_kb             : 214.3
+      created             : 2025-01-14 09:23:11
+      modified            : 2025-01-14 09:23:11
 
-size_kb             : 214.3
+    [ HASHES ]
+    ----------------------------------------
+      MD5                 : a3f1c9e2...
+      SHA1                : 7bd4e120...
+      SHA256              : 9a2f871c...
 
-created             : 2025-01-14 09:23:11
-
-modified            : 2025-01-14 09:23:11
-[ HASHES ]
-MD5                 : a3f1c9e2...
-
-SHA1                : 7bd4e120...
-
-SHA256              : 9a2f871c...
-[ IMAGE METADATA ]
-Image Make                    : Apple
-
-Image Model                   : iPhone 14 Pro
-
-GPS GPSLatitude               : 24, 27, 36
-
-GPS GPSLongitude              : 54, 22, 12
+    [ IMAGE METADATA ]
+    ----------------------------------------
+      Image Make                    : Apple
+      Image Model                   : iPhone 14 Pro
+      GPS GPSLatitude               : 24, 27, 36
+      GPS GPSLongitude              : 54, 22, 12
 
 ---
 
 ## Project Structure
 
-file-metadata-extractor/
-├── src/
-│   ├── extractor.py      # Core metadata extraction logic
-│   └── report.py         # Report generation (TXT + JSON)
-├── samples/              # Drop files here to analyse (gitignored)
-├── output/               # Reports saved here (gitignored)
-├── main.py               # Entry point
-├── requirements.txt      # Dependencies
-└── README.md
+    file-metadata-extractor/
+    ├── src/
+    │   ├── extractor.py      # Core metadata extraction logic
+    │   └── report.py         # Report generation (TXT + JSON)
+    ├── samples/              # Drop files here to analyse (gitignored)
+    ├── output/               # Reports saved here (gitignored)
+    ├── main.py               # Entry point
+    ├── requirements.txt      # Dependencies
+    └── README.md
 
 ---
 
